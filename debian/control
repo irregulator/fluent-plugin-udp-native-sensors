@@ -1,0 +1,18 @@
+Source: ruby-fluent-plugin-udp-native-sensors
+Section: ruby
+Priority: optional
+Maintainer: Alexandros Afentoulis <alexaf.dpkg@bloom.re>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               ruby-simplecov,
+Standards-Version: 3.9.8
+Homepage: https://github.com/Juniper/fluent-plugin-udp-native-sensors
+XS-Ruby-Versions: all
+
+Package: ruby-fluent-plugin-udp-native-sensors
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: ruby-fluent-plugin-udp-native-sensors
